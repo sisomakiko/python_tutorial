@@ -1,35 +1,31 @@
-r = [1, 2, 3, 4, 5, 1, 2, 3]
-print(r.index(2, 2))
+num_tuple = (10, 20)
+print(num_tuple)
 
-print(r.count(3))
+x, y = num_tuple
+print(x, y)
 
-if 100 in r:
-    print('exist')
+x, y = (10, 20)
+print(x, y)
 
-r.sort()
-print(r)
-r.sort(reverse=True)
-print(r)
-r.reverse()
-print(r)
+i = 10
+j = 20
+tmp = i
+i = j
+j = tmp
+print(i, j)
 
-s = 'My name is Mike.'
-to_split = s.split(' ')
-print(to_split)
+a = 100
+b = 200
+print(a, b)
+a, b = b, a
+print(a, b)
 
-x = ' '.join(to_split)
-print(x)
+print('----------------')
 
-print(help(list))
+choose_from_two = ('A', 'B', 'C')
+answer = []
+answer.append('A')
+answer.append('C')
 
-i = [1, 2, 3, 4, 5]
-j = i
-j[0] = 100
-print('j =', j)
-print('i =', i)
-
-x = [1, 2, 3, 4, 5]
-y = x.copy()
-y[0] = 100
-print('y =', y)
-print('x =', x)
+print(choose_from_two)
+print(answer)
