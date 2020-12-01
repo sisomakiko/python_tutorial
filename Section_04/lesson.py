@@ -1,19 +1,8 @@
-x = {'a': 1}
-y = x
-y['a'] = 1000
-print(x)
-print(y)
+my_friends = {'A', 'C', 'D'}
+his_friends = {'B', 'D', 'E', 'F'}
 
-x = {'a': 1}
-y = x.copy()
-y['a'] = 1000
-print(x)
-print(y)
+print(my_friends | his_friends)
 
-fruits = {
-    'apple': 100,
-    'banana': 200,
-    'orange': 300
-}
-
-print('price of apple is {}'.format(fruits['apple']))
+f = ['apple', 'banana', 'apple', 'banana']
+kind = set(f)
+print(kind)
